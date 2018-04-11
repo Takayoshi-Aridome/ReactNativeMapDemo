@@ -1,0 +1,46 @@
+
+スマートフォンが利用しているGPS衛星をUIで表示
+iPhone:
+GPS Plan
+https://itunes.apple.com/jp/app/gps-plan/id623849032?mt=8
+Android:
+AndroiTS GPS Test Pro
+https://play.google.com/store/apps/details?id=com.androits.gps.test.pro
+
+準天頂衛星システム「みちびき」
+http://qzss.go.jp/index.html
+みちびき対応製品リスト：スマホ・タブレットPC欄
+http://qzss.go.jp/usage/products/list.html#smart%20phone/tablet%20PC
+みちびきから放送する補完信号
+http://www.satnavi.jaxa.jp/project/qzss/news/2011/pdf/qz-110714.pdf
+
+アルマナックとエフェメリス
+http://qzss.go.jp/column/diagram_170613.html
+
+アルマナック【Almanac】
+軌道上における全ての衛星に関する軌道情報
+有効期間：最大6日
+精度：数百m～数km
+
+エフェメリス【Ephemeris】
+自機衛星の正確な位置情報と信号を発射した時刻情報
+有効期限:最大4時間
+精度[放送暦]：数m
+精度[精密暦]:精度：数cm
+
+GPS【GlobalPositioningSystem】3次元測位による現在地の測定
+http://www.jaxa.jp/countdown/f18/overview/gps_j.html
+コールドスタート：アルマナック情報無し／エフェメリス情報無しの状態から位置を測定
+測定にかかる時間：30～60秒
+ウォームスタート：アルマナック情報有り／エフェメリス情報無しの状態から位置を測定
+測定にかかる時間：60秒未満
+ホットスタート：アルマナック情報有り／エフェメリス情報有りの状態から位置を測定
+測定にかかる時間：0.5～20秒以内
+
+A-GPS【AssistedGlobalPositioningSystem】
+GPSを利用するAPIが叩かれるとSUPLサーバへアクセスして補助情報（ホットスタートするために必要な情報）の取得を試みる
+iPhone:
+  AppleのSUPLサーバへアクセス
+ Android:
+  国内：各キャリアのSUPLサーバにアクセス ※docomoはSPモードからしか接続を許可しない
+  国外：GoogleのSUPLサーバへアクセス
